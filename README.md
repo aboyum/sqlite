@@ -38,7 +38,7 @@ print(placeholder)
 conn.close()
 ```
 
-# Table where to colums makes a uniqnes
+# Table where two colums makes a uniqnes
 ```sqlite
 CREATE TABLE switches(id integer primary key, ip text, port_name text, port_description text);
 CREATE UNIQUE INDEX idx_ipport ON switches(ip, port_name);
